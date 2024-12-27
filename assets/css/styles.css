@@ -1,0 +1,402 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffff;
+    overflow-x: hidden;
+}
+
+a {
+    color: #000;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.navbar-brand img {
+    height: 50px;
+    /* Adjust the height */
+    width: auto;
+    /* Maintain aspect ratio */
+}
+
+.navbar-nav .nav-link {
+    margin-right: 15px;
+    /* Adjust gap between links */
+    padding: 8px 12px;
+    /* Adjust padding inside links */
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Full height viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+
+.hero-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Ensures the image covers the container */
+}
+
+.custom-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    /* Ensure it stays above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a shadow for a floating effect */
+    background-color: #f8f9fa;
+    /* Optional: Background color for the header */
+}
+
+.bluebell-second-section {
+    margin: 70px 0;
+}
+
+.second-center {
+    background: linear-gradient(180deg, rgba(0, 0, 0, .05) 0, rgba(0, 0, 0, .05) 100%);
+    border: 1px solid #fff;
+
+    border-radius: 10px;
+    width: 50%;
+    background-color: rgb(215 196 196 / 32%);
+}
+
+.second-center h2 {
+    font-size: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-family: "Corinthia";
+    font-weight: 400;
+    text-align: center;
+}
+
+.second-center h3 {
+    font-size: 37.94px;
+    font-weight: 500;
+    line-height: 42.53px;
+    font-family: "Exo 2";
+    color: #fff;
+    text-align: center;
+}
+
+.second-center h4 {
+    font-size: 24.94px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: Exo2;
+    color: #fff;
+    text-align: center;
+}
+
+.Bluelbellbtn {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    /* Default text color */
+    border: 1px solid #fff;
+    width: 37%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 9px 0;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Jura", sans-serif;
+    position: relative;
+    overflow: hidden;
+    /* Hides the gradient overflow during transition */
+    background: transparent;
+    /* Initial background */
+    transition: color 0.4s ease;
+    /* Transition for text color */
+    z-index: 1;
+    /* Ensures text is above the pseudo-element */
+}
+
+.Bluelbellbtn::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0008ff;
+    /* Set the background color you want for the hover effect */
+    transition: top 0.4s ease;
+    /* Transition the position of the gradient */
+    z-index: -1;
+
+    /* Ensures the background is below the text */
+}
+
+.Bluelbellbtn:hover::before {
+    top: 0;
+    /* Moves the gradient from bottom to top */
+}
+
+.Bluelbellbtn:hover {
+    color: #fff;
+    border: 1px solid #0008ff;
+    /* Ensures the text color remains white on hover */
+}
+
+/* <!-- Swiper CSS --> */
+.bluebell-third-section {
+
+    background-color: #fff;
+    /* Optional background color */
+    padding: 10px 0;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bluebell-fourth-section {
+    margin: 70px 0 0 0;
+   
+}
+.fourthcard img {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 17px;
+    display: flex;
+    margin-top: 19px;
+}
+
+.bluebellhead {
+
+    font-family: "Lato";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28.22px;
+    color: #121212;
+
+}
+
+.bluebelltext {
+
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 16.2px;
+    color: #5b5b5b;
+    text-align: start;
+    font-family: "Lato";
+
+}
+
+.card1{
+    padding: 10px 20px;
+    border: 1px solid #ede2e2;
+    border-radius: 5px;
+}
+.bluebell-sixth-section{
+    margin: 0 0 68px 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.bluebellsixthimgleft h2{
+    font-family: "Corinthia";
+    color: #ff7a00;
+    font-weight: 400;
+    font-size: 61.11px;
+    line-height: 31.99px;
+}
+.bluebellsixthimgleft h3{
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 60.11px;
+    line-height: 61.13px;
+    color: #121212;
+}
+.bluebellsixthimgleft p{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14.44px;
+    line-height: 16.46px;
+    color: #5b5b5b;
+}
+.bluebelldiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 14px 14px;
+    border-radius: 9px;
+    margin: 24px 0;
+    width: 95%;
+}
+.bluebellsixttext h3{
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 24.44px;
+    line-height: 60.13px;
+    color: #121212;
+    margin-bottom: -9px;
+}
+.bluebellsixttext p{
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 16.33px;
+    line-height: 22.24px;
+    color: #5b5b5b;
+}
+.bluebellsixttext{
+    width: 85%;
+}
+.bluebellsiximg{
+    width: 10%;
+}
+.bluebellsixthimgleft{
+    padding: 28px 0;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        /* Adjust for smaller screens */
+    }
+
+    .second-center {
+        width: 100%;
+        background: #ffff;
+        background-color: #ffff;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .second-center h4 {
+        color: #000;
+        font-size: 19.94px;
+        font-weight: 500;
+        line-height: 27px;
+        font-family: Exo2;
+
+        text-align: center;
+        margin-bottom: 17px;
+
+
+    }
+
+    .second-center h3 {
+        color: #000;
+        line-height: 31.53px;
+        font-size: 25.94px;
+
+    }
+
+    .second-center h2 {
+        color: #000;
+        font-size: 50px;
+    }
+
+    .Bluelbellbtn {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0008ff !important;
+        color: #fff;
+        border: 1px solid #0088ff;
+        width: 66%;
+        margin: auto;
+        border-radius: 5px;
+        padding: 9px 0;
+        font-size: 22px;
+        font-weight: 700;
+        font-family: "Jura", sans-serif;
+        position: relative;
+        overflow: hidden;
+        background: transparent;
+        transition: color 0.4s ease;
+        z-index: 1;
+    }
+
+
+    .translate-middle {
+        transform: translate(-50%, -7%) !important;
+    }
+
+    .bluebell-third-section {
+        background-color: #fff;
+        margin: 350px 0 0 0;
+        padding: 12px 0;
+    }
+    .bluebell-fourth-section {
+        margin: 40px 0 0 0;
+    }
+    .bluebellhead {
+        font-family: "Lato";
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 13.22px;
+        color: #121212;
+    }
+    .card1 {
+        padding: 10px 16px;
+        border: 1px solid #ede2e2;
+        border-radius: 5px;
+    }
+    .bluebell-sixth-section {
+        margin: -58px 0 64px 0;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .bluebellsixthimgleft h2 {
+        font-family: "Corinthia";
+        color: #ff7a00;
+        font-weight: 400;
+        font-size: 43.11px;
+        line-height: 24.99px;
+        text-align: center;
+    }
+    .bluebellsixthimgleft h3 {
+        font-family: "Lato";
+        font-weight: 400;
+        font-size: 29.11px;
+        line-height: 30.13px;
+        color: #121212;
+        text-align: center;
+    }
+    .bluebellsixthimgleft p {
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: 14.44px;
+        line-height: 16.46px;
+        color: #5b5b5b;
+        text-align: center;
+        padding: 13px 0;
+    }
+    .bluebelldiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 14px 14px;
+        border-radius: 9px;
+        margin: 22px 7px;
+        width: 96%;
+    }
+
+}
