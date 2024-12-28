@@ -54,7 +54,8 @@ li {
 }
 
 .custom-sticky-header {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1030;
     /* Ensure it stays above other elements */
@@ -178,8 +179,9 @@ li {
 
 .bluebell-fourth-section {
     margin: 70px 0 0 0;
-   
+
 }
+
 .fourthcard img {
     width: 50%;
     margin: auto;
@@ -209,37 +211,42 @@ li {
 
 }
 
-.card1{
+.card1 {
     padding: 10px 20px;
     border: 1px solid #ede2e2;
     border-radius: 5px;
 }
-.bluebell-sixth-section{
-    margin: 0 0 68px 0;
+
+.bluebell-sixth-section {
+    margin: 0 0 0 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.bluebellsixthimgleft h2{
+
+.bluebellsixthimgleft h2 {
     font-family: "Corinthia";
     color: #ff7a00;
     font-weight: 400;
     font-size: 61.11px;
     line-height: 31.99px;
 }
-.bluebellsixthimgleft h3{
+
+.bluebellsixthimgleft h3 {
     font-family: "Lato";
     font-weight: 600;
     font-size: 60.11px;
     line-height: 61.13px;
     color: #121212;
 }
-.bluebellsixthimgleft p{
+
+.bluebellsixthimgleft p {
     font-family: "Poppins";
     font-weight: 400;
     font-size: 14.44px;
     line-height: 16.46px;
     color: #5b5b5b;
 }
-.bluebelldiv{
+
+.bluebelldiv {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -249,7 +256,8 @@ li {
     margin: 24px 0;
     width: 95%;
 }
-.bluebellsixttext h3{
+
+.bluebellsixttext h3 {
     font-family: Lato;
     font-weight: 500;
     font-size: 24.44px;
@@ -257,22 +265,201 @@ li {
     color: #121212;
     margin-bottom: -9px;
 }
-.bluebellsixttext p{
+
+.bluebellsixttext p {
     font-family: Lato;
     font-weight: 500;
     font-size: 16.33px;
     line-height: 22.24px;
     color: #5b5b5b;
 }
-.bluebellsixttext{
+
+.bluebellsixttext {
     width: 85%;
 }
-.bluebellsiximg{
+
+.bluebellsiximg {
     width: 10%;
 }
-.bluebellsixthimgleft{
+
+.bluebellsixthimgleft {
     padding: 28px 0;
 }
+
+.bluebell-seventh-section {
+    padding: 70px 0 0 0;
+    background-color: #fff7f1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
+
+.seventh-right h2 {
+    font-family: "Corinthia";
+    font-weight: 700;
+    font-size: 61.11px;
+    line-height: 31.99px;
+    color: #ff7a00;
+    margin-left: 70px;
+}
+
+.seventh-right h3 {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 50.2px;
+    margin-left: 70px;
+    color: #000;
+}
+
+.bluebellcarsoule {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #fff;
+    width: 70%;
+    height: 234px;
+    margin: auto;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.bluebellcarsoule h2 {
+
+    font-weight: 700;
+    font-size: 18.11px;
+
+    color: #000;
+
+}
+
+.bluebellcarsoule h4 {
+    color: gray;
+    font: 15px;
+}
+
+.footer-section {
+    background: #f9f9f9;
+}
+
+.footer-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+    /* Highlight color on hover */
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.bluebell-eight-section {
+    margin: 70px 0;
+}
+
+.bluebell-eight-section h2 {
+    font-size: 61.11px;
+    font-weight: 400;
+    font-family: "Corinthia";
+    color: #ff7a00;
+    line-height: 31.99px;
+    text-align: center;
+}
+
+.bluebell-eight-section h3 {
+    font-size: 55px;
+    font-weight: 700;
+    font-family: "Lato";
+    color: #000;
+    line-height: 50.2px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.bluebellVideo {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+}
+
+.bluebellVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.bluebell-ninth-section {
+    margin: 0 0 70px 0;
+}
+
+.contacttext h2 {
+    font-family: "Corinthia";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 31.99px;
+    color: #ff7a00;
+
+}
+
+.contacttext h3 {
+    font-family: Lato;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 50.2px;
+    color: #121212;
+}
+
+.contacttext p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.2px;
+    color: #5b5b5b;
+}
+
+.contact-left .form-control {
+    border: 1.48px solid #007bc2;
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 2px 0, rgba(60, 64, 67, .15) 0 2px 6px 2px;
+
+}
+
+.contact-left label {
+    font-family: "Poppins";
+    font-size: 12.11px;
+    line-height: 13.73px;
+    font-weight: 500;
+    color: #b8b8b8;
+}
+
+.contact-section {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 77px;
+}
+
 
 @media (max-width: 768px) {
     .hero-section {
@@ -344,9 +531,11 @@ li {
         margin: 350px 0 0 0;
         padding: 12px 0;
     }
+
     .bluebell-fourth-section {
         margin: 40px 0 0 0;
     }
+
     .bluebellhead {
         font-family: "Lato";
         font-size: 12px;
@@ -354,15 +543,18 @@ li {
         line-height: 13.22px;
         color: #121212;
     }
+
     .card1 {
         padding: 10px 16px;
         border: 1px solid #ede2e2;
         border-radius: 5px;
     }
+
     .bluebell-sixth-section {
-        margin: -58px 0 64px 0;
+        margin: -58px 0 0px 0;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
+
     .bluebellsixthimgleft h2 {
         font-family: "Corinthia";
         color: #ff7a00;
@@ -371,6 +563,7 @@ li {
         line-height: 24.99px;
         text-align: center;
     }
+
     .bluebellsixthimgleft h3 {
         font-family: "Lato";
         font-weight: 400;
@@ -379,6 +572,7 @@ li {
         color: #121212;
         text-align: center;
     }
+
     .bluebellsixthimgleft p {
         font-family: "Poppins";
         font-weight: 400;
@@ -388,6 +582,7 @@ li {
         text-align: center;
         padding: 13px 0;
     }
+
     .bluebelldiv {
         display: flex;
         align-items: center;
@@ -397,6 +592,60 @@ li {
         border-radius: 9px;
         margin: 22px 7px;
         width: 96%;
+    }
+
+    .seventh-right h2 {
+        font-family: "Corinthia";
+        font-weight: 700;
+        font-size: 51.11px;
+        line-height: 17.99px;
+        color: #ff7a00;
+        margin-left: 11px;
+        letter-spacing: 4px;
+    }
+
+    .seventh-right h3 {
+        font-family: "Lato";
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 37.2px;
+        margin-left: 11px;
+        color: #000;
+    }
+
+    .bluebellcarsoule {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        background-color: #fff;
+        width: 96%;
+        height: 273px;
+        margin: auto;
+        padding: 20px 10px;
+        border-radius: 10px;
+        margin-top: 21px;
+    }
+
+    .bluebell-seventh-section {
+        padding: 70px 0 42px 0;
+        background-color: #fff7f1;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+
+    .bluebell-eight-section {
+        margin: 33px 0 70px 0;
+    }
+
+    .bluebell-eight-section h3 {
+        font-size: 26px;
+        font-weight: 700;
+        font-family: "Lato";
+        color: #000;
+        line-height: 32.2px;
+        text-align: center;
+        margin-bottom: 21px;
+    }
+
+    .bluebell-ninth-section {
+        margin: 0 0 0px 0;
     }
 
 }

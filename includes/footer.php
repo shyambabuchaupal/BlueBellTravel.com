@@ -1,3 +1,52 @@
+<footer class="footer-section bg-light text-dark py-5">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h4 class="footer-title">Blue Bell Travels</h4>
+                <p>
+                    We are committed to creating tailored travel experiences that leave lasting memories. Let’s plan your next adventure!
+                </p>
+                <div class="social-icons">
+                    <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+                </div>
+            </div>
+            <!-- Links Section -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5 class="footer-title">Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark">Home</a></li>
+                    <li><a href="#" class="text-dark">About Us</a></li>
+                    <li><a href="#" class="text-dark">Packages</a></li>
+                    <li><a href="#" class="text-dark">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Legal Section -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5 class="footer-title">Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark">Terms of Use</a></li>
+                    <li><a href="#" class="text-dark">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <!-- Contact Section -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="footer-title">Contact Us</h5>
+                <p><i class="fas fa-map-marker-alt me-2"></i>LGF-70, Ansal Fortune Arcade, Sector 18, Noida, U.P. 201301</p>
+                <p><i class="fas fa-phone me-2"></i>+91 8800150150, +91 8800140140</p>
+                <p><i class="fas fa-envelope me-2"></i>info@bluebelltravels.com</p>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="text-center mt-4">
+            <p class="mb-0">&copy; 2024. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
 <!-- Bootstrap js -->
 <script src="./assets/js/bootstrap.bundle.min.js"></script>
 <!-- Swiper JS -->
@@ -76,6 +125,45 @@ const swiper = new Swiper('.swiper', {
         });
     });
 </script>
+
+
+<script>
+  // Array to store YouTube Player instances
+  var players = [];
+
+  // Initialize YouTube API
+  function onYouTubeIframeAPIReady() {
+    // Get all iframe elements
+    var iframes = document.querySelectorAll('iframe');
+
+    // Create a new player instance for each iframe
+    iframes.forEach(function (iframe, index) {
+      players[index] = new YT.Player(iframe, {
+        events: {
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    });
+  }
+
+  // Handle state change (e.g., when a video starts playing)
+  function onPlayerStateChange(event) {
+    // If a video starts playing, pause all other videos
+    if (event.data === YT.PlayerState.PLAYING) {
+      players.forEach(function (player) {
+        if (player !== event.target) {
+          player.pauseVideo();
+        }
+      });
+    }
+  }
+  
+  // Load the YouTube API script
+  var script = document.createElement('script');
+  script.src = 'https://www.youtube.com/iframe_api';
+  document.body.appendChild(script);
+</script>
+
 
 </body>
 

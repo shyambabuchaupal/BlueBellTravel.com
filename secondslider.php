@@ -366,37 +366,37 @@ only screen and (min-width: 992px) and (max-width: 1199px){
 
         <div class="stack">
             <div class="card">
-                <img src="./assets/imags/Bluebellfifthpartimg1.png" alt="Image 1 Description" />
+                <img src="./assets/images/Bluebellfifthpartimg1.png" alt="Image 1 Description" />
             </div>
             <div class="card">
-                <img src="./assets/imags/Bluebellfifthpartimg1.png" alt="Image 2 Description" />
+                <img src="./assets/images/Bluebellfifthpartimg1.png" alt="Image 2 Description" />
             </div>
             <div class="card">
-                <img src="./assets/imags/Bluebellfifthpartimg2.png" alt="Image 3 Description" />
+                <img src="./assets/images/Bluebellfifthpartimg2.png" alt="Image 3 Description" />
             </div>
             <div class="card">
-                <img src="./assets/imags/Bluebellfifthpartimg3.png" alt="Image 4 Description" />
+                <img src="./assets/images/Bluebellfifthpartimg3.png" alt="Image 4 Description" />
             </div>
             <div class="card">
-                <img src="./assets/imags/Bluebellfifthpartimg4.png" alt="Image 5 Description" />
+                <img src="./assets/images/Bluebellfifthpartimg4.png" alt="Image 5 Description" />
             </div>
             <div class="card">
-                <img src="./assets/imags/Bluebellfifthpartimg5.png" alt="Image 6 Description" />
+                <img src="./assets/images/Bluebellfifthpartimg5.png" alt="Image 6 Description" />
             </div>
             <div class="card">
-                <img src="./assets/imags/Bluebellfifthpartimg6.png" alt="Image 7 Description" />
+                <img src="./assets/images/Bluebellfifthpartimg6.png" alt="Image 7 Description" />
             </div>
             <div class="card">
-                <img src="./assets/imags/Bluebellfifthpartimg7.png" alt="Image 8 Description" />
+                <img src="./assets/images/Bluebellfifthpartimg7.png" alt="Image 8 Description" />
             </div>
             <div class="card">
-                <img src="./assets/imags/Bluebellfifthpartimg8.png" alt="Image 9 Description" />
+                <img src="./assets/images/Bluebellfifthpartimg8.png" alt="Image 9 Description" />
             </div>
             <div class="card">
-                <img src="./assets/imags/Bluebellfifthpartimg9.png" alt="Image 10 Description" />
+                <img src="./assets/images/Bluebellfifthpartimg9.png" alt="Image 10 Description" />
             </div>
             <div class="card">
-                <img src="./assets/imags/Bluebellfifthpartimg10.png" alt="Image 11 Description" />
+                <img src="./assets/images/Bluebellfifthpartimg10.png" alt="Image 11 Description" />
             </div>
         </div>
         <div class='my-3 d-flex justify-content-center'>
