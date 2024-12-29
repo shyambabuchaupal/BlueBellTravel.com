@@ -1,35 +1,47 @@
+<?php
+include 'connection.php';
+?>
 <!doctype html">
-<html lang="en" style="
-    overflow-x: hidden;>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DESTINATIONS - BLUEBELL TRAVELS</title>
     <link href="./assets/images/Bluebellicon.png" rel="icon">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <!-- bootstrap Icon  -->
+
+    <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
 
-    <!-- Corinthia font  -->
+    <!-- Corinthia font -->
     <link href="https://fonts.googleapis.com/css2?family=Corinthia&display=swap" rel="stylesheet">
-    <!-- "Exo 2" font  -->
+
+    <!-- Exo 2 font -->
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Jura font -->
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
-      <!-- Swiper CSS -->
-      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-      <!-- Lato font  -->
-      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
-<!-- Font Awesome -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Lato font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 
 <body>
     <!-- Header Start -->

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+body,html {
     background-color: #ffff;
     overflow-x: hidden;
 }
@@ -460,6 +460,225 @@ li {
     margin-top: 77px;
 }
 
+.bluebell-about-section {
+    margin: 70px 0;
+}
+
+.about-content h3 {
+    font-size: 19px;
+    font-weight: 400;
+    color: #121212;
+    font-family: 'Poppins';
+    margin-bottom: 20px;
+
+}
+
+.about-content h4 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #000;
+    font-family: 'Poppins';
+
+}
+
+.bluebell-review-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bluebellGoogleimg {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.bluebellDestination {
+    margin: 70px 0;
+}
+
+.destinImg {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /* Ensure it takes the full width of the parent column */
+    height: 300px;
+    /* Set a consistent height */
+}
+
+.destinImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the container proportionally */
+    transition: transform 0.3s ease-in-out;
+}
+
+.destinImg:hover img {
+    transform: scale(1.1);
+    /* Slight zoom effect */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 0.25rem;
+    /* Match rounded corners of the image */
+}
+
+.destinImg:hover .overlay {
+    opacity: 1;
+    /* Show overlay on hover */
+}
+
+.place-name {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bluebellmahakub {
+    margin: 24px 0 15px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 0px;
+    padding: 45px 0;
+    background-color: #ffefef;
+}
+
+.bluebellmahakub h1 {
+    font-size: 37px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bluebellmahakub p {
+    font-size: 35px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.bluebellmahakub p span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.image-container {
+    margin: 0;
+    /* Remove margins around the container */
+    padding: 0;
+    /* Remove padding around the container */
+}
+
+.image-container img {
+    display: block;
+    /* Ensure images do not have inline space */
+    margin: 0;
+    /* Remove margins around the image */
+    padding: 0;
+    /* Remove padding around the image */
+    object-fit: cover;
+    /* Ensures the image fills its container */
+}
+
+.bg-yellow {
+    background-color: yellow;
+    /* Set background color */
+    padding: 20px;
+    /* Padding to give space around the content */
+    display: block;
+    /* Ensures that background color fills the entire block */
+}
+
+.text-black {
+    color: black;
+    /* Set text color */
+}
+
+.full-bg {
+    width: 100%;
+    /* Ensures full width of the container */
+    height: auto;
+    /* Ensures the container height adjusts based on content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bluebellmahakub h6 {
+    font-size: 25px;
+    text-align: center;
+    padding: 35px 0;
+}
+
+
+
+
+.Term-section{
+        /* position: relative; */
+        width: 100%;
+        /* height: 100vh; */
+        display: flex
+    ;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 77px;
+}
+
+
+  /* Container for the icons */
+  .fixed-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+ /* Individual icon styling */
+ .fixed-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ /* Hover effect */
+ .fixed-icons a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Phone icon specific styles */
+.fixed-icons a.phone {
+    background-color: #007BFF; /* Phone blue */
+}
 
 @media (max-width: 768px) {
     .hero-section {
@@ -648,4 +867,52 @@ li {
         margin: 0 0 0px 0;
     }
 
+    .contact-section {
+        /* position: relative; */
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 77px;
+    }
+
+    .about-content h3 {
+        font-size: 17px;
+        font-weight: 400;
+        color: #121212;
+        font-family: 'Poppins';
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .bluebell-about-section {
+        margin: 28px 0 70px 0;
+    }
+
+    .bluebellmahakub h1 {
+        font-size: 19px;
+        font-weight: 700;
+        text-decoration: underline;
+        margin-bottom: 4px;
+        text-align: center;
+    }
+
+    .bluebellmahakub p {
+        font-size: 23px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .bluebellmahakub {
+        margin: 24px 0 70px 0;
+    }
+
+    .bluebellmahakub h6 {
+        font-size: 17px;
+        text-align: center;
+        padding: 22px 0;
+    }
 }

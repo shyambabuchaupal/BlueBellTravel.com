@@ -48,33 +48,21 @@
                     <!-- Swiper Container -->
                     <div class="swiper">
                         <div class="swiper-wrapper">
+                            <?php
+                            $travelQuery="SELECT * FROM `trav`";
+                            $travelResult=mysqli_query($conn,$travelQuery);
+                            while($travlerow=mysqli_fetch_assoc($travelResult)){
+                                ?>
+
                             <!-- Swiper Slides -->
                             <div class="swiper-slide">
-                                <img src="./assets/images/Bluebellmg1.png" alt="Bluebell Image 1" class="img-fluid">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/images/Bluebellmg2.png" alt="Bluebell Image 2" class="img-fluid">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/images/Bluebellmg3.png" alt="Bluebell Image 3" class="img-fluid">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/images/Bluebellmg4.png" alt="Bluebell Image 4" class="img-fluid">
-                            </div>
-                            <!-- Swiper Slides -->
-                            <div class="swiper-slide">
-                                <img src="./assets/images/Bluebellmg1.png" alt="Bluebell Image 1" class="img-fluid">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/images/Bluebellmg2.png" alt="Bluebell Image 2" class="img-fluid">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/images/Bluebellmg3.png" alt="Bluebell Image 3" class="img-fluid">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/images/Bluebellmg4.png" alt="Bluebell Image 4" class="img-fluid">
+                                <img src="./assets/images/<?=$travlerow['image']?>" alt="Bluebell Image 1"
+                                    class="img-fluid">
                             </div>
 
+                            <?php
+                            }
+                            ?>
                         </div>
 
                     </div>
@@ -87,75 +75,32 @@
         <div class="container">
             <div class="row g-4">
                 <!-- First Card -->
-
+                <?php 
+                 $thirdquery='SELECT * FROM `thirdpart`';
+                 $thirdResult=mysqli_query($conn,$thirdquery);
+                 while($thirdrow=mysqli_fetch_assoc($thirdResult)){
+                    ?>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                     <div class="card1 shadow-sm fourthcard">
 
                         <div class="card-body">
-                            <h5 class="card-title bluebellhead">EXCITING PACKAGES</h5>
-                            <p class="card-text bluebelltext">Discover your dream vacation
-                                with our handcrafted packages,
-                                blending excitement and cultural richness.</p>
+                            <h5 class="card-title bluebellhead"><?=$thirdrow['heading']?></h5>
+                            <p class="card-text bluebelltext"><?=$thirdrow['title']?></p>
 
                         </div>
-                        <img src="./assets/images/BlueBellFourtPartImg4.png" class="card-img-top"
-                            alt="Exciting Packages">
+                        <img src="./assets/images/<?=$thirdrow['image']?>" class="card-img-top" alt="Exciting Packages">
                     </div>
                 </div>
-                <!-- Second Card -->
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
-                    <div class="card1 shadow-sm fourthcard">
+                <?php
+                 }
+                 ?>
 
-                        <div class="card-body">
-                            <h5 class="card-title bluebellhead">REASONABLE PRICE</h5>
-                            <p class="card-text bluebelltext">
-                                Budget-friendly escapades
-                                from flights and hotels to currency
-                                conversion, we’ve got you all covered.
-                            </p>
 
-                        </div>
-                        <img src="./assets/images/BlueBellFourtPartImg2.png" class="card-img-top"
-                            alt="Reasonable Price">
-                    </div>
-                </div>
-                <!-- Third Card -->
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
-                    <div class="card1 shadow-sm fourthcard">
-
-                        <div class="card-body">
-                            <h5 class="card-title bluebellhead">CUSTOMIZED TRAVEL</h5>
-                            <p class="card-text bluebelltext">
-                                Begin your dream vacation
-                                effortlessly with our easy
-                                , instant, and hassle-free booking experience.
-                            </p>
-
-                        </div>
-                        <img src="./assets/images/BlueBellFourtPartImg3.png" class="card-img-top"
-                            alt="Customized Travel">
-                    </div>
-                </div>
-                <!-- Fourth Card -->
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
-                    <div class="card1 shadow-sm fourthcard">
-
-                        <div class="card-body">
-                            <h5 class="card-title bluebellhead">QUICK BOOKINGS</h5>
-                            <p class="card-text bluebelltext">Discover your dream vacation
-                                with our handcrafted packages,
-                                blending excitement and
-                                cultural richness.</p>
-
-                        </div>
-                        <img src="./assets/images/BlueBellFourtPartImg1.png" class="card-img-top" alt="Quick Bookings">
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 
-    <div class="bluebell-fifth-section">
+    <div class="bluebell-fifth-section ">
         <div class="container">
             <?php include 'secondslider.php' ?>
         </div>
@@ -482,44 +427,46 @@
                         <form class="row g-3 needs-validation" novalidate>
                             <div class="col-md-6">
                                 <label for="validationCustom01" class="form-label">First name</label>
-                                <input type="text" class="form-control" id="validationCustom01"  required>
+                                <input type="text" class="form-control" id="validationCustom01" required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label for="validationCustom02" class="form-label">Last name</label>
-                                <input type="text" class="form-control" id="validationCustom02"  required>
+                                <input type="text" class="form-control" id="validationCustom02" required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <label for="validationCustom03" class="form-label">Email</label>
-                                <input type="text" class="form-control" id="validationCustom03"  required>
+                                <input type="text" class="form-control" id="validationCustom03" required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <label for="validationCustom04" class="form-label">Phone No.</label>
-                                <input type="number" class="form-control" id="validationCustom04" placeholder='+91 |'  required>
+                                <input type="number" class="form-control" id="validationCustom04" placeholder='+91 |'
+                                    required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <label for="validationCustom05" class="form-label">Your Message</label>
-                                <textarea class="form-control" name="message" rows="6" placeholder="Message"  id="validationCustom05" required=""></textarea>
+                                <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                    id="validationCustom05" required=""></textarea>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
-                           
-                           
-                           
+
+
+
                             <div class="col-12">
-                                <button class="btn btn-primary" type="submit">Submit form</button>
+                                <button class="btn btn-primary" type="submit">Send</button>
                             </div>
                         </form>
                     </div>
@@ -528,33 +475,43 @@
         </div>
     </div>
 
-
-
-
-
+    <div class="fixed-icons">
+        <!-- WhatsApp Icon -->
+        <a href="https://wa.me/8800150150/?text=Hello%20there!" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <!-- Phone Icon -->
+        <a href="tel:+918800150150" class="phone" aria-label="Phone">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
 
 </main>
 
+
 <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
+// Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
-  'use strict'
+    'use strict'
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll('.needs-validation')
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
 
-  // Loop over them and prevent submission
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
 
-      form.classList.add('was-validated')
-    }, false)
-  })
+            form.classList.add('was-validated')
+        }, false)
+    })
 })()
 </script>
+
+
+
 
 <?php include 'includes/footer.php'; ?>
