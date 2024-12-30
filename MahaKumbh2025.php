@@ -5,9 +5,9 @@
             <div class="col-12">
                 <div class="hero-img">
                     <img src="./assets/images/BluebellMahakubDesk.webp" class="img-fluid d-md-block d-none"
-                        alt="Hero Background Image" />
+                        alt="Hero Background Image" loading="lazy"/>
                     <img src="./assets/images/BluebellMahakubMob.webp" class="img-fluid d-md-none"
-                        alt="Hero Background Image Mobile" />
+                        alt="Hero Background Image Mobile" loading="lazy"/>
                 </div>
             </div>
         </div>
@@ -25,9 +25,9 @@
                 </p>
                 <div class="image-container">
                     <img src="./assets/images/bluebellbgdesk.jpg" class="img-fluid d-md-block d-none"
-                        alt="Hero Background Image" />
+                        alt="Hero Background Image" loading="lazy"/>
                     <img src="./assets/images/bluebellbgmob.webp" class="img-fluid d-md-none"
-                        alt="Hero Background Image Mobile" />
+                        alt="Hero Background Image Mobile" loading="lazy"/>
                 </div>
             </div>
         </div>
@@ -53,19 +53,19 @@
             <div class="col-md-4 mb-3">
                 <div class="bluebell-Img">
                     <img src="./assets/images/Bluebell1.webp" class="img-fluid"
-                        alt="A scenic view of the Maha Kumbh Mela with devotees gathered at the holy river confluence.">
+                        alt="A scenic view of the Maha Kumbh Mela with devotees gathered at the holy river confluence." loading="lazy">
                 </div>
             </div>
             <div class="col-md-4 mb-3">
                 <div class="bluebell-Img">
                     <img src="./assets/images/bluebellbgmob.webp" class="img-fluid"
-                        alt="Vibrant cultural performance during the Maha Kumbh Mela.">
+                        alt="Vibrant cultural performance during the Maha Kumbh Mela." loading="lazy">
                 </div>
             </div>
             <div class="col-md-4 mb-3">
                 <div class="bluebell-Img">
                     <img src="./assets/images/Bluebellimg3.webp" class="img-fluid"
-                        alt="A spiritual moment at the Maha Kumbh Mela with pilgrims participating in rituals.">
+                        alt="A spiritual moment at the Maha Kumbh Mela with pilgrims participating in rituals." loading="lazy">
                 </div>
             </div>
         </div>

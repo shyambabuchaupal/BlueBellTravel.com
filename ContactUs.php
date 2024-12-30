@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="hero-img">
-                    <img src="./assets/images/BluebellContact.webp" class="img-fluid" alt="Hero Background Image" />
+                    <img src="./assets/images/BluebellContact.webp" class="img-fluid" alt="Hero Background Image" loading="lazy"/>
 
                 </div>
             </div>

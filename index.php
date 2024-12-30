@@ -7,9 +7,9 @@
                 <div class="col-12">
                     <div class="hero-img">
                         <img src="./assets/images/BlueBellBgDesktop.webp" class="img-fluid d-md-block d-none"
-                            alt="Hero Background Image" />
+                            alt="Hero Background Image" loading="lazy"/>
                         <img src="./assets/images/BlueBellBgMobile.png" class="img-fluid d-md-none"
-                            alt="Hero Background Image Mobile" />
+                            alt="Hero Background Image Mobile" loading="lazy"/>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                 <div class="col-12">
                     <div class="second-section position-relative">
                         <img src="./assets/images/BlueBellsecondPartImg.png" class="img-fluid rounded d-md-block d-none"
-                            alt="BlueBell Second Part Image" />
+                            alt="BlueBell Second Part Image" loading="lazy"/>
                         <div class="second-center position-absolute top-50 start-50 translate-middle pt-3 pb-4">
                             <h2>Plan your trip</h2>
                             <h3>Discover the world with<br>
@@ -57,7 +57,7 @@
                             <!-- Swiper Slides -->
                             <div class="swiper-slide">
                                 <img src="./assets/images/<?=$travlerow['image']?>" alt="Bluebell Image 1"
-                                    class="img-fluid">
+                                    class="img-fluid" loading="lazy">
                             </div>
 
                             <?php
@@ -88,7 +88,7 @@
                             <p class="card-text bluebelltext"><?=$thirdrow['title']?></p>
 
                         </div>
-                        <img src="./assets/images/<?=$thirdrow['image']?>" class="card-img-top" alt="Exciting Packages">
+                        <img src="./assets/images/<?=$thirdrow['image']?>" class="card-img-top" alt="Exciting Packages" loading="lazy">
                     </div>
                 </div>
                 <?php
@@ -113,7 +113,7 @@
                 <div class="col-md-6">
                     <div class="bluebellsixithimgright">
                         <img src="./assets/images/Bluebellsixthpart4.png" class="card-img-top"
-                            alt="Bluebellsixthpart4 img">
+                            alt="Bluebellsixthpart4 img" loading="lazy">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -126,7 +126,7 @@
                         </p>
                         <div class=" bluebelldiv">
                             <div class="bluebellsiximg">
-                                <img src="./assets/images/Bluebellsixthpart3.png" alt="Bluebellsixthpart3 img">
+                                <img src="./assets/images/Bluebellsixthpart3.png" alt="Bluebellsixthpart3 img" loading="lazy">
                             </div>
                             <div class="bluebellsixttext">
                                 <h3>
@@ -137,7 +137,7 @@
                         </div>
                         <div class=" bluebelldiv">
                             <div class="bluebellsiximg">
-                                <img src="./assets/images/Bluebellsixthpart2.png" alt="Bluebellsixthpart3 img">
+                                <img src="./assets/images/Bluebellsixthpart2.png" alt="Bluebellsixthpart3 img"loading="lazy">
                             </div>
                             <div class="bluebellsixttext">
                                 <h3>Best Price</h3>
@@ -146,7 +146,7 @@
                         </div>
                         <div class=" bluebelldiv">
                             <div class="bluebellsiximg">
-                                <img src="./assets/images/Bluebellsixthpart1.png" alt="Bluebellsixthpart3 img">
+                                <img src="./assets/images/Bluebellsixthpart1.png" alt="Bluebellsixthpart3 img" loading="lazy">
                             </div>
                             <div class="bluebellsixttext">
                                 <h3>
@@ -168,7 +168,7 @@
                         <h2>Testimonials</h2>
                         <h3>What our Travelers are saying</h3>
                         <img src="./assets/images/BluebellTesimonial.png" class="card-img-top"
-                            alt="Bluebell Testimonial">
+                            alt="Bluebell Testimonial" loading="lazy">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 m-auto">
